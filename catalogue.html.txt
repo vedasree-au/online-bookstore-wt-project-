@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue</title>
+</head>
+<body>
+  <h1>Book Catalogue</h1>
+
+  <section>
+    <p>Book 1 - Rs. 200</p>
+    <button data-item="Book 1 - Rs.200">Add to Cart</button>
+  </section>
+
+  <section>
+    <p>Book 2 - Rs. 300</p>
+    <button data-item="Book 2 - Rs.300">Add to Cart</button>
+  </section>
+
+  <section>
+    <p>Book 3 - Rs. 250</p>
+    <button data-item="Book 3 - Rs.250">Add to Cart</button>
+  </section>
+
+  <p><a href="cart.html">Go to Cart</a></p>
+
+  <script>
+    // Attach event listeners to all "Add to Cart" buttons
+    document.querySelectorAll("button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const itemName = btn.getAttribute("data-item");
+        const existingCart = localStorage.getItem("cart");
+        const cartArray = existingCart ? JSON.parse(existingCart) : [];
+        
+        cartArray.push(itemName);
+        localStorage.setItem("cart", JSON.stringify(cartArray));
+        
+        alert(`${itemName} has been added to your cart!`);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Shopping Cart</title>
+</head>
+<body>
+  <h1>Your Cart</h1>
+  <ul id="cartList"></ul>
+
+  <p><a href="catalogue.html">Back to Catalogue</a></p>
+
+  <script>
+    // Retrieve cart data from localStorage
+    const savedCart = localStorage.getItem("cart");
+    const items = savedCart ? JSON.parse(savedCart) : [];
+
+    const list = document.querySelector("#cartList");
+
+    if (items.length === 0) {
+      list.innerHTML = "<li>Your cart is empty.</li>";
+    } else {
+      for (let i = 0; i < items.length; i++) {
+        const liElement = document.createElement("li");
+        liElement.textContent = items[i];
+        list.appendChild(liElement);
+      }
+    }
+  </script>
+</body>
+</html>

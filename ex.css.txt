@@ -1,0 +1,25 @@
+body {
+    background-color: #000;   /* black background */
+    color: #000;              /* black text (will blend in) */
+}
+
+table {
+    border: 20px groove white;
+    padding: 20px;
+}
+
+tr {
+    background: cyan;
+    font-size: 1.5em;         /* same as x-large */
+    font-weight: 700;         /* bold text */
+}
+
+td {
+    font-size: 1.5em;
+    font-style: italic;       /* italic style */
+}
+
+h1 {
+    background: #000;
+    color: #fff;              /* make header visible */
+}

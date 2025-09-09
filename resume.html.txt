@@ -1,0 +1,329 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vavilala Vedasree — Resume</title>
+  <style>
+    :root{
+      --bg:#efeae6;
+      --sidebar:#e5dfda;
+      --accent:#2b211d; /* dark brown header */
+      --muted:#6b6b6b;
+      --text:#222;
+      --line: #d6d0cc;
+      --max-width:1000px;
+      --gap:28px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:20px;
+      background:var(--bg);
+      color:var(--text);
+      display:flex;
+      justify-content:center;
+      font-size:15px;
+      line-height:1.45;
+    }
+
+    .resume {
+      width:100%;
+      max-width:var(--max-width);
+      background:white;
+      display:flex;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      border-radius:4px;
+      overflow:hidden;
+      border:1px solid var(--line);
+    }
+
+    /* Left sidebar */
+    .sidebar{
+      width:320px;
+      min-width:260px;
+      background:var(--sidebar);
+      padding:36px 32px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    .name-block{
+      background:var(--accent);
+      color:white;
+      padding:26px 22px;
+      text-align:center;
+      margin:-18px -32px 18px -32px; /* extend across sidebar top */
+    }
+    .name-block h1{
+      margin:0;
+      font-size:22px;
+      letter-spacing:2px;
+    }
+    .name-block p{
+      margin:6px 0 0;
+      font-size:14px;
+      opacity:0.95;
+    }
+
+    .contact{
+      font-size:14px;
+      color:var(--muted);
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+    .contact div{display:flex; align-items:center; gap:8px;}
+
+    .section-title{
+      margin-top:6px;
+      margin-bottom:10px;
+      font-weight:700;
+      letter-spacing:0.6px;
+      color:var(--accent);
+      font-size:14px;
+    }
+
+    .education, .skills, .language, .activities {
+      background:transparent;
+    }
+
+    .education .school{
+      font-weight:700;
+      font-size:14px;
+      margin-bottom:6px;
+    }
+    .education .meta{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .skills ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+      column-count:1;
+    }
+    .skills li{
+      margin:6px 0;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    hr.side-sep{
+      border:0;
+      border-top:1px solid var(--line);
+      margin:8px 0 6px 0;
+    }
+
+    /* Main content */
+    .main{
+      flex:1;
+      padding:36px 40px;
+    }
+
+    .header{
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:6px;
+      margin-top:6px;
+    }
+    .main .title{
+      font-size:26px;
+      font-weight:800;
+      letter-spacing:2px;
+      color:var(--accent);
+    }
+    .main .subtitle{
+      font-size:14px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+
+    .about{
+      margin-top:8px;
+      font-size:14px;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+      padding-top:12px;
+    }
+
+    .section{
+      margin-top:18px;
+    }
+    .section h3{
+      margin:0 0 8px 0;
+      font-size:15px;
+      color:var(--accent);
+      letter-spacing:0.6px;
+    }
+
+    .work-item, .cert-list, .project-item{
+      margin-bottom:12px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .work-item .role{
+      font-weight:700;
+      color:var(--text);
+      font-size:14px;
+    }
+
+    .cert-list ul{
+      margin:0;
+      padding-left:18px;
+    }
+
+    .project-item .title{
+      font-weight:700;
+      color:var(--text);
+      margin-bottom:6px;
+      font-size:14px;
+    }
+
+    /* small details */
+    .muted{
+      color:var(--muted);
+    }
+
+    /* Responsive */
+    @media (max-width:880px){
+      .resume{flex-direction:column}
+      .sidebar{width:100%; min-width:unset; padding:20px}
+      .name-block{margin:-20px -20px 12px -20px}
+      .main{padding:20px}
+    }
+  </style>
+</head>
+<body>
+  <article class="resume" role="document" aria-label="Resume — Vavilala Vedasree">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="name-block" aria-hidden="false">
+        <h1>VAVILALA VEDASREE</h1>
+        <p>B-tech 3<sup>rd</sup> year</p>
+      </div>
+
+      <div class="contact" aria-label="Contact information">
+        <div><strong>Email:</strong>&nbsp;<span class="muted">vedasree.v10@gmail.com</span></div>
+        <div><strong>Phone:</strong>&nbsp;<span class="muted">8309293421</span></div>
+        <div><strong>Location:</strong>&nbsp;<span class="muted">Medipally, Hyderabad</span></div>
+      </div>
+
+      <hr class="side-sep" />
+
+      <div class="education">
+        <div class="section-title">EDUCATION</div>
+        <div class="school">B-tech 3rd year</div>
+        <div class="meta">
+          Anurag University<br/>
+          2023 - 2027<br/>
+          Computer Science — Data Science
+        </div>
+      </div>
+
+      <hr class="side-sep" />
+
+      <div class="skills">
+        <div class="section-title">SKILLS</div>
+        <ul>
+          <li>Python programming</li>
+          <li>Basics in Java</li>
+          <li>JavaScript</li>
+          <li>CSS / HTML</li>
+          <li>Machine learning</li>
+          <li>Data analysis</li>
+          <li>MS Excel</li>
+          <li>Basics in C, C++</li>
+          <li>Artificial intelligence</li>
+        </ul>
+      </div>
+
+      <hr class="side-sep" />
+
+      <div class="language">
+        <div class="section-title">LANGUAGE</div>
+        <div class="muted">English / Hindi / Telugu</div>
+      </div>
+
+      <hr class="side-sep" />
+
+      <div class="activities">
+        <div class="section-title">ACTIVITIES</div>
+        <ul style="list-style:none;padding:0;margin:0;color:var(--muted)">
+          <li>Reading</li>
+          <li>Browsing</li>
+          <li>Journaling</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- RIGHT MAIN -->
+    <main class="main" aria-label="Main content">
+      <header class="header" role="banner">
+        <div class="title">VAVILALA VEDASREE</div>
+        <div class="subtitle">B-tech 3<sup>rd</sup> year — Data Science student</div>
+      </header>
+
+      <section class="about" aria-labelledby="about-heading">
+        <h4 id="about-heading" class="section-title">About Me</h4>
+        <p>
+          I am Vavilala Vedasree, a third-year B.Tech student specializing in Data Science at Anurag University.
+          I am passionate about solving real-world problems through technology and continuously upskilling myself
+          in areas like Python, machine learning, and data structures. I'm eager to grow as a data-driven problem
+          solver and contribute to impactful projects in the field of artificial intelligence and software development.
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="work-heading">
+        <h3 id="work-heading">WORK EXPERIENCE</h3>
+
+        <div class="work-item">
+          <div class="role">Intern — vedasree (Hyderabad, India)</div>
+          <div class="muted">30 day virtual internship on artificial intelligence and machine learning.</div>
+          <div class="muted">Kodacy-Space</div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="cert-heading">
+        <h3 id="cert-heading">CERTIFICATIONS</h3>
+        <div class="cert-list">
+          <ul>
+            <li>Deloitte: technology job simulation</li>
+            <li>Kody: certification of virtual internship on artificial intelligence and machine learning</li>
+            <li>Infosys Springboard: CSS3, HTML5, JavaScript, Python for beginners, multiprocesssing in Python, design thinking assessment</li>
+            <li>Cisco: Data Analytics Essentials, Cyber Threat Management, Networking Basics</li>
+            <li>HP Life: Data Science & Analytics, AI for Beginners</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="project-heading">
+        <h3 id="project-heading">PROJECTS</h3>
+
+        <div class="project-item">
+          <div class="title">Hangman Game — Python</div>
+          <div class="muted">
+            Built a terminal-based Hangman game with word guessing logic, input validation, and a simple ASCII-based UI using modular code structure.
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="title">Elysian — Event Planning Website (HTML, CSS, JavaScript, Bootstrap)</div>
+          <div class="muted">
+            Developed a responsive website for event planning with interactive booking forms, service listings, and a clean, mobile-friendly UI.
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer spacing -->
+      <div style="height:18px"></div>
+    </main>
+  </article>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body style="background-color: pink;">
+
+  <div style="text-align: center;">
+    <img src="logo.png" alt="AGI">
+  </div>
+
+  <table style="border: 2px solid black; width: 100%; height: 55px; margin: 0 auto;" cellspacing="0" cellpadding="5">
+    <tr>
+      <td style="text-align: center;">
+        <a href="login.html" target="showframe">Login</a>
+      </td>
+      <td style="text-align: center;">
+        <a href="validation.html" target="showframe">Validation</a>
+      </td>
+      <td style="text-align: center;">
+        <a href="catalogue.html" target="showframe">Catalogue</a>
+      </td>
+      <td style="text-align: center;">
+        <a href="cart.html" target="showframe">Cart</a>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
