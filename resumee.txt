@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Online Book Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; }
+    .resume-header { background: #343a40; color: white; padding: 30px; text-align: center; }
+    .resume-section { padding: 30px 20px; }
+    .resume-section h3 { border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="resume-header">
+    <h1>Your Name</h1>
+    <p>Web Developer | Java | Database | Full Stack Enthusiast</p>
+    <p>Email: your.email@example.com | GitHub: <a href="https://github.com/yourusername" class="text-white">github.com/yourusername</a></p>
+  </div>
+
+  <!-- Education -->
+  <div class="container resume-section">
+    <h3>Education</h3>
+    <ul>
+      <li><strong>B.Tech in Computer Science</strong> – Your College Name (Year – Year)</li>
+      <li>Relevant Coursework: Web Development, Database Systems, Software Engineering</li>
+    </ul>
+  </div>
+
+  <!-- Skills -->
+  <div class="container resume-section">
+    <h3>Skills</h3>
+    <ul class="row">
+      <li class="col-md-4">Java, Python</li>
+      <li class="col-md-4">HTML, CSS, Bootstrap</li>
+      <li class="col-md-4">JavaScript</li>
+      <li class="col-md-4">MySQL, MongoDB</li>
+      <li class="col-md-4">Git & GitHub</li>
+      <li class="col-md-4">Spring Boot (optional)</li>
+    </ul>
+  </div>
+
+  <!-- Projects -->
+  <div class="container resume-section">
+    <h3>Projects</h3>
+    <div>
+      <h5>📚 Online Book Store (Main Project)</h5>
+      <p>A full-stack web application to browse, add, and purchase books online.</p>
+      <ul>
+        <li>Developed using HTML, CSS, Bootstrap for frontend</li>
+        <li>Java + Servlets/JSP for backend</li>
+        <li>MySQL database for storing books & user data</li>
+        <li>Implemented session tracking & authentication for users</li>
+      </ul>
+      <p><a href="https://github.com/yourusername/onlinebookstoreproject" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="container resume-section">
+    <h3>Experience</h3>
+    <ul>
+      <li><strong>Internship / College Project Work</strong> – Worked on Java & Database driven applications</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-dark text-white">
+    <p>© 2025 Your Name | Online Book Store Resume</p>
+  </footer>
+
+</body>
+</html>
